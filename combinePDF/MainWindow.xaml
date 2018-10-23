@@ -1,0 +1,27 @@
+﻿<Window x:Class="combinePDF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:combinePDF"
+        mc:Ignorable="d"
+        Title="Combine PDF - LMN" Height="445.067" Width="361.067"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <ListBox Name="listboxPdfFiles" Margin="10,50,95,10.2" DisplayMemberPath="friendlyName" SelectedValuePath="fullname" AllowDrop="True"/>
+        <Label Name="labelFileCount"  Content="PDF filer: 0" HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.219,0.816"/>
+        <Label Name="labelOutputPath" Content="Output Path" Margin="140,21,5,0" VerticalAlignment="Top"/>
+
+        <Menu Height="22" VerticalAlignment="Top">
+            <MenuItem Header="File"></MenuItem>
+            <MenuItem Header="About" Name="menuAbout"></MenuItem>
+        </Menu>
+
+        <Button Name="buttonInputFiles" Content="Input Files" HorizontalAlignment="Right" Margin="0,50,5,0" VerticalAlignment="Top" Width="85"/>
+        <Button Name="buttonSaveAs" Content="Save As" HorizontalAlignment="Right" Margin="0,73,5.4,0" VerticalAlignment="Top" Width="85"/>
+        <Button Name="buttonRun" Content="Run" HorizontalAlignment="Right" Margin="0,97,5.4,0" VerticalAlignment="Top" Width="85"/>
+
+
+    </Grid>
+</Window>
